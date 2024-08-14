@@ -82,6 +82,17 @@ void leds_turn_off_all(void);
  */
 uint8_t leds_status(uint16_t * virtual_port, uint16_t led);
 
+/**
+ * @brief Checks if a specific LED is turned on.
+ *
+ * This function checks the status of a specific LED to determine if it is
+ * currently turned on. It returns a boolean value indicating the state of
+ * the LED.
+ *
+ * @param led Position of the LED to check.
+ * @return bool true if the LED is on, false if the LED is off.
+ */
+bool led_is_turned_on(int led);
 /* === End of documentation
  * ==================================================================== */
 

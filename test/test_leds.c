@@ -21,6 +21,9 @@ void setUp(void) {
     leds_init(&virtual_port);
 }
 
+void tearDown(void) {
+
+}
 /**
  * @test Verifies that all LEDs start off when the system is initialized.
  */

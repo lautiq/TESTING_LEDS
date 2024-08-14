@@ -27,6 +27,8 @@
   - "-:test/support"
   :source:
   - src/**
+  - src
+  - test
   :support:
   - test/support
   :include: []
