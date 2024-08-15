@@ -105,10 +105,10 @@ void leds_turn_off_all(void) {
  * @return bool true if the LED is on, false if the LED is off.
  */
 bool led_is_turned_on(int led) {
-    bool check = ((*virtual_port & led_to_mask(led)) != 0);
     if (led >= 1 && led <= 16) {
-        return check;
+        return ((*virtual_port & led_to_mask(led)) != 0);
     }
+    return false;
 }
 
 /**
