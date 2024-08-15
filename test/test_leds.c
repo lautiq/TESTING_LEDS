@@ -99,7 +99,7 @@ void test_preder_un_led_y_consultar_su_estado(void) {
 void test_leds_fuera_de_rango(void) {
 
     leds_turn_on(-1);
-    TEST_ASSERT_TRUE(led_is_turned_on(-1));
+    TEST_ASSERT_FALSE(led_is_turned_on(-1));
     TEST_ASSERT_EQUAL_HEX16(0x0000, virtual_port);
 
     leds_turn_on(17);
